@@ -6,4 +6,7 @@ class World {
         this.cols = cols;
     }
 
+    addActor(actor) {
+        this.actors.push(actor);
+    }
 }

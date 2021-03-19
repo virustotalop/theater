@@ -1,6 +1,6 @@
 class Actor {
 
-    constructor(world, x, y) {
+    constructor(x, y) {
         this.world = world;
         this.x = this.checkBound(x, world.rows);
         this.y = this.checkBound(y, world.cols);
@@ -8,7 +8,7 @@ class Actor {
     }
 
     act() {
-        
+        console.log('Default Actor')
     }
 
 

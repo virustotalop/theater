@@ -1,8 +1,8 @@
 var world;
 var theater;
 
-requirejs(['src/world', 'src/actor', 'src/theater', 'src/timer'], () => {
-    requirejs(['src/test/TestActor'], () => {
+require(['src/world', 'src/actor', 'src/theater', 'src/timer'], () => {
+    require(['src/test/TestActor'], () => {
         world = new World(10, 10);
         world.addActor(new TestActor(world, 0, 0));
     
